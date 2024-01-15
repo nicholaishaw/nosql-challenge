@@ -1,2 +1,2 @@
-Outside assistance:
-1. Tutor David Chao assisted with the development of the syntax for both the startup jupyter file and the analysis file. Specifically, David assisted with creating the logic behind the NoSQL queries and assisted with the syntax.
+# Background
+The UK Food Standards Agency evaluates various establishments across the United Kingdom, and gives them a food hygiene rating. You've been contracted by the editors of a food magazine, Eat Safe, Love, to evaluate some of the ratings data in order to help their journalists and food critics decide where to focus future articles.
