@@ -12,7 +12,9 @@ Once the Mongo database was set up, I started a Jupyter Notebook to manage the d
 * Listed the collection(s) in the database to ensure that establishments is there.
 * Found and displayed one document in the establishments collection using find_one and display with pprint.
 * Assigned the establishments collection to a variable to prepare the collection for use.
+  
 ![image](https://github.com/nicholaishaw/nosql-challenge/assets/135463220/45e007b3-6499-4764-8e26-7e473862d1e5)
+
 **Figure 1.** *A sample document in the 'establishments' collection.*
 
 
