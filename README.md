@@ -27,11 +27,11 @@ Before I can perform any queries or analyses, the magazine editors requested fou
 
 2. The new halal restaurant does not possess a business ID. To fix this, I first found the BusinessTypeID for "Restaurant/Cafe/Canteen" values in the database. Then, I updated the halal restaurant's BusinessTypeID value based on the BusinessTypeID I found above.
 
-3. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
+3. The magazine is not interested in any establishments in Dover, so I checked how many documents contain the Dover Local Authority. Then, I removed any establishments within the Dover Local Authority from the database, and checked the number of documents to ensure they were deleted.
 
 4. Some of the number values are stored as strings, when they should be stored as numbers.<br>
-   </br>4a. Use update_many to convert latitude and longitude to decimal numbers.<br>
-   </br>4b. Use update_many to convert RatingValue to integer numbers.
+   </br>4a. I used update_many to convert latitude and longitude to decimal numbers.<br>
+   </br>4b. I used update_many to convert RatingValue to integer numbers.
 
 ## Part 3: Exploratory Analysis
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
