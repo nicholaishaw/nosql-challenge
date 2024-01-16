@@ -19,20 +19,18 @@ Once the Mongo database was created and the dataset was imported, I set up a Jup
 
 
 ## Part 2: Update the Database
-Before I can perform any queries or analyses, the magazine editors have some requested modifications for the database. I made the following changes to the establishments collection:
+Before I can perform any queries or analyses, the magazine editors requested five modifications for the database. I made the following changes to the establishments collection:
 
-1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked you to include it in your analysis. Add the following information to the database:
+1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked me to include it in your analysis. I added the following information to the database:
 ![image](https://github.com/nicholaishaw/nosql-challenge/assets/135463220/9e318a7d-5914-4172-9294-8b0c6356567c)
 
-2. Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
+2. The new halal restaurant does not possess a business ID. To fix this, I first found the BusinessTypeID for "Restaurant/Cafe/Canteen" values in the database. Then, I updated the halal restaurant's BusinessTypeID value based on the BusinessTypeID I found above.
 
-3. Update the new restaurant with the BusinessTypeID you found.
+3. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
 
-4. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
-
-5. Some of the number values are stored as strings, when they should be stored as numbers.<br>
-   </br>5a. Use update_many to convert latitude and longitude to decimal numbers.<br>
-   </br>5b. Use update_many to convert RatingValue to integer numbers.
+4. Some of the number values are stored as strings, when they should be stored as numbers.<br>
+   </br>4a. Use update_many to convert latitude and longitude to decimal numbers.<br>
+   </br>4b. Use update_many to convert RatingValue to integer numbers.
 
 ## Part 3: Exploratory Analysis
 Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
