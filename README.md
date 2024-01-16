@@ -44,27 +44,13 @@ Some notes to be aware when exploring the dataset:
 * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
 
-Unless otherwise stated, for each question:
+The magazine wanted me to find the answers to the following questions:
 
-Use count_documents to display the number of documents contained in the result.
+* Which establishments have a hygiene score equal to 20?
+* Which establishments in London have a RatingValue greater than or equal to 4?
+* What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+* How many establishments in each local authority area have a hygiene score of 0? The results should be sorted from highest to lowest, and the top ten local authority areas should be printed. *The output will be in the form of a pandas dataframe.*
 
-Display the first document in the results using pprint.
+![image](https://github.com/nicholaishaw/nosql-challenge/assets/135463220/511a780f-edc8-40e5-87bb-4d495adf1337)
 
-Convert the result to a Pandas DataFrame, print the number of rows in the DataFrame, and display the first 10 rows.
-
-Which establishments have a hygiene score equal to 20?
-
-Which establishments in London have a RatingValue greater than or equal to 4?
-
-Hint: The London Local Authority has a longer name than "London" so you will need to use $regex as part of your search.
-
-What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
-
-Hint: You will need to compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
-
-How many establishments in each Local Authority area have a hygiene score of 0? Sort the results from highest to lowest, and print out the top ten local authority areas.
-
-Hint: You will need to use the aggregation method to answer this.
-
-The first 5 rows of your resulting DataFrame should look something like this:
-
+**Figure 2.** *Pandas dataframe containing the establishments in each local authority that have a hygiene score of 0. Only the top ten results are displayed.*
