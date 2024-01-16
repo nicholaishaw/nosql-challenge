@@ -19,7 +19,7 @@ Once the Mongo database was created and the dataset was imported, I set up a Jup
 
 
 ## Part 2: Update the Database
-Before I can perform any queries or analyses, the magazine editors requested five modifications for the database. I made the following changes to the establishments collection:
+Before I can perform any queries or analyses, the magazine editors requested four modifications for the database. I made the following changes to the establishments collection:
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked me to include it in your analysis. I added the following information to the database:
 
