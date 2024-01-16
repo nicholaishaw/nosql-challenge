@@ -4,7 +4,7 @@ The UK Food Standards Agency evaluates various establishments across the United 
 ## Part 1: Database and Jupyter Notebook Set Up
 The agency provided the data in the 'establishments.json' file in the resources folder. I used the terminal to import the data into a Mongo database named 'uk_food.' I named the collection 'establishments'. I copied the text I used to import my data from my terminal to a markdown cell in my notebook for ease of replication.
 
-Once the Mongo database was created and the dataset was imported, I set up a Jupyter Notebook to manage the data:
+Once the Mongo database was created and the dataset was imported, I set up a Jupyter Notebook to manage the data. The following work was performed in the NoSQL_setup.ipynb jupyter file.
 * Imported the following libraries: PyMongo and Pretty Print (pprint).
 * Created an instance of the Mongo Client.
 * Confirmed that I created the database and loaded the data properly
@@ -19,7 +19,7 @@ Once the Mongo database was created and the dataset was imported, I set up a Jup
 
 
 ## Part 2: Update the Database
-Before I can perform any queries or analyses, the magazine editors requested four modifications for the database. I made the following changes to the establishments collection:
+Before I can perform any queries or analyses, the magazine editors requested four modifications for the database. The modifications to the database were performed in the NoSQL_setup.ipynb jupyter file. I made the following changes to the establishments collection:
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked me to include it in your analysis. I added the following information to the database:
 
@@ -34,7 +34,7 @@ Before I can perform any queries or analyses, the magazine editors requested fou
    </br>4b. I used update_many to convert RatingValue to integer numbers.
 
 ## Part 3: Exploratory Analysis
-The magazine has specific questions they want me to answer, which will help them find the locations they wish to visit and avoid. The following analyses will be completed in the NoSQL_analysis.ipynb jupyter file.
+The magazine has specific questions they want me to answer, which will help them find the locations they wish to visit and avoid. **The following analyses were completed in the NoSQL_analysis.ipynb jupyter file.**
 
 Some notes to be aware when exploring the dataset:
 
