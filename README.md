@@ -30,8 +30,8 @@ Before I can perform any queries or analyses, the magazine editors have some req
 
 4. The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
 
-5. Some of the number values are stored as strings, when they should be stored as numbers.
-   5a. Use update_many to convert latitude and longitude to decimal numbers.
+5. Some of the number values are stored as strings, when they should be stored as numbers.<br>
+   </br>5a. Use update_many to convert latitude and longitude to decimal numbers.
    5b. Use update_many to convert RatingValue to integer numbers.
 
 ## Part 3: Exploratory Analysis
