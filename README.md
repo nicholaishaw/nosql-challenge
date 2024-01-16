@@ -22,6 +22,7 @@ Once the Mongo database was created and the dataset was imported, I set up a Jup
 Before I can perform any queries or analyses, the magazine editors requested five modifications for the database. I made the following changes to the establishments collection:
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked me to include it in your analysis. I added the following information to the database:
+
 ![image](https://github.com/nicholaishaw/nosql-challenge/assets/135463220/9e318a7d-5914-4172-9294-8b0c6356567c)
 
 2. The new halal restaurant does not possess a business ID. To fix this, I first found the BusinessTypeID for "Restaurant/Cafe/Canteen" values in the database. Then, I updated the halal restaurant's BusinessTypeID value based on the BusinessTypeID I found above.
