@@ -34,15 +34,14 @@ Before I can perform any queries or analyses, the magazine editors requested fou
    </br>4b. I used update_many to convert RatingValue to integer numbers.
 
 ## Part 3: Exploratory Analysis
-Eat Safe, Love has specific questions they want you to answer, which will help them find the locations they wish to visit and avoid.
+The magazine has specific questions they want me to answer, which will help them find the locations they wish to visit and avoid. The following analyses will be completed in the NoSQL_analysis.ipynb jupyter file.
 
-Use NoSQL_analysis_starter.ipynb for this section of the challenge.
+Some notes to be aware when exploring the dataset:
 
-Some notes to be aware of while you are exploring the dataset:
+* The RatingValue field refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
+** **Note:** This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. I will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
 
-RatingValue refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
-Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
-The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
+* The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
 
 Unless otherwise stated, for each question:
