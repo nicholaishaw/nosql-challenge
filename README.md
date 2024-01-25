@@ -18,7 +18,7 @@ Once the Mongo database was created and the dataset was imported, I set up a Jup
 **Figure 1.** *A sample document in the 'establishments' collection.*
 
 
-## Part 2: Update the Database
+## Part 2: Database Updates
 Before I can perform any queries or analyses, the magazine editors requested four modifications for the database. The modifications to the database were performed in the NoSQL_setup.ipynb jupyter file. I made the following changes to the establishments collection:
 
 1. An exciting new halal restaurant just opened in Greenwich, but hasn't been rated yet. The magazine has asked me to include it in your analysis. I added the following information to the database:
